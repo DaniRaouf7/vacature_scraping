@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "vacatures-zoeken"
+version = "0.1.0"
+description = "Project waarin code geschreven is om dynamisch vacatures te scrapen van websites"
+authors = ["Danish Raouf <danishraouf@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.3"
+requests = "^2.32.3"
+beautifulsoup4 = "^4.12.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
