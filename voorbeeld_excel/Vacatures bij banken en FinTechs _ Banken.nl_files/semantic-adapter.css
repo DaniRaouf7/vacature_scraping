@@ -1,0 +1,325 @@
+*, :after, :before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+a {
+    color: var(--light-main-color);
+}
+a:hover {
+    color: var(--light-main-color-hover);
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 17px;
+}
+
+#wrap .ui.checkbox .box, .ui.checkbox label {
+    font-size: 15px;
+}
+
+#wrap .ui.steps .step.active .title {
+    color: var(--light-main-color);
+}
+#wrap .ui.steps .step {
+    padding: 10px 10px 10px 25px;
+}
+
+#wrap .ui.steps .step:first-child {
+    padding-left: 24px;
+}
+
+#wrap .ui.ordered.steps .step.completed:before, .ui.steps .step.completed>.icon:before {
+    color: var(--light-main-color);
+}
+
+#wrap .ui.ordered.steps .step:before {
+    font-size: 17px;
+    margin-right: 10px;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+#wrap .ui.ordered.steps .step:first-child:before {
+    left:24px;
+}
+
+#wrap .ui.steps .step .title {
+    padding-left: 15px;
+}
+#wrap .ui.grid {
+    box-sizing: border-box;
+}
+
+#wrap .ui.steps .step.completed .title {
+    padding-left: 22px;
+}
+
+#wrap .ui.steps .step .description {
+    font-size: 12px;
+    max-width: 116px;
+    height: 34px;
+    overflow-wrap: break-word;
+}
+
+#wrap .ui.ordered.steps {
+    margin-top: 0;
+}
+
+#wrap .ui.steps.hidden {
+    display: none;
+}
+
+#wrap .ui.form .required.field>.checkbox:after, .ui.form .required.field>label:after, .ui.form .required.fields.grouped>label:after, .ui.form .required.fields:not(.grouped)>.field>.checkbox:after, .ui.form .required.fields:not(.grouped)>.field>label:after {
+    color: var(--light-main-color);
+}
+
+#wrap .fomantic-ui .ui.form .field>label {
+    font-size: 15px;
+}
+
+#wrap .fomantic-ui {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#wrap input::placeholder {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    color: #999;
+}
+#wrap .ui.input > input {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#wrap .ui.multiple.dropdown a.ui.label {
+    font-weight: normal;
+}
+
+.ui.modal>.content {
+    box-sizing: border-box;
+}
+
+.ui.project-blue {
+    background-color: var(--light-main-color);
+    color:white;
+}
+.ui.project-blue:hover {
+    background-color: var(--light-main-color-hover);
+    color: white;
+}
+
+#wrap .field .error-field, .ui.modals .field .error-field {
+    color: #9f3a38;
+    background: #fff6f6;
+    border-color: #e0b4b4;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#wrap .field .error-field::placeholder, .ui.modals .field .error-field::placeholder {
+    color: #e0b4b4;
+}
+
+#wrap .ui.selection.dropdown, #wrap .ui.calendar  {
+    box-sizing: border-box;
+}
+
+#wrap .ui.dropdown .menu .item {
+    padding: 6px 11px !important;
+    font-size: 14px;
+    border: none;
+    min-height: 14px;
+}
+
+#wrap .ui.icon.input>i.icon:before {
+    top: 20%;
+    margin-top: 0;
+}
+
+#wrap .ui.top.pointing.dropdown>.menu {
+    margin-top: 5px;
+}
+
+#wrap .ui[class*="custom column"].grid>.column:not(.row), #wrap .ui[class*="custom column"].grid>.row>.column {
+    width: 25%;
+}
+
+.ui.button {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* icons */
+i.icon {
+    display: inline-block;
+    opacity: 1;
+    margin: 0 .25rem 0 0;
+    width: 1.18em;
+    height: 1em;
+    font-family: icons;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: inherit;
+    text-align: center;
+    speak: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+i.icon, i.icons {
+    font-size: 1em;
+}
+
+i.icon.search:before {
+    content: "\e803";
+    font-family: icons;
+}
+i.icon.remove:before {
+    content: "\e804";
+}
+i.icon.user:before {
+    content: "\e82e";
+}
+i.icon.filter:before {
+    content: '\e83f';
+}
+i.icon.lock:before {
+    content: "\e850";
+}
+i.icon.refresh:before {
+    content: "\e84a";
+    font-family: icons;
+}
+i.icon.add:before {
+    content: "\e800";
+    font-family: icons;
+}
+.ui.image {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    background-color: transparent;
+}
+
+.ui.form .field {
+    height: 2.6em;
+}
+
+.ui.form.def-form .fields .field {
+    height: unset;
+    box-sizing: border-box;
+}
+
+#wrap .field .ui.icon.input>i.icon:before {
+    top: 50%;
+    margin-top: -10px;;
+}
+#wrap .ui.form .field input:-webkit-autofill {
+    -webkit-box-shadow: rgb(69, 68, 101)!important;
+    box-shadow: rgb(69, 68, 101)!important;
+    border: 1px solid rgba(34,36,38,.15)!important;
+}
+#wrap .ui.form .field input {
+    border: 1px solid rgba(34,36,38,.15)!important;
+}
+#wrap .ui.form .field input:hover {
+    border-color: #28516f !important;
+}
+#wrap .ui.form .field input:focus {
+    border-color: var(--light-main-color) !important;
+}
+#wrap input:-webkit-autofill::first-line {
+    font-family: 'Nunito Sans', sans-serif;
+      font-size: 16px;
+  }
+#wrap .ui.form .ui.button {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#wrap .ui.form .ui.lowercase.button {
+    text-transform: initial;
+    font-weight: 700;
+    font-size: 1em;
+}
+body {
+    font-size: 17px;
+}
+
+body, p {
+    margin: 0;
+    line-height: 30px;
+}
+b, strong {
+    font-weight: bold;
+}
+
+#wrap .ui.message, #wrap .ui.message .header {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+@media only screen and (min-width: 992px) {
+.ui.grid>[class*="three-item wide computer"].column, .ui.grid>.column.row>[class*="three-item wide computer"].column, .ui.grid>.row>[class*="three-item wide computer"].column, .ui.grid>[class*="three-item wide computer"].column {
+    width: 33.33%!important;
+    max-width: 33.33%!important;
+}
+
+
+}
+
+@media only screen and (max-width: 1039.98px) {
+    #wrap .ui[class*="custom column"].grid>.column:not(.row), #wrap .ui[class*="custom column"].grid>.row>.column {
+        width: 50%;
+    }
+
+    .ui.grid>[class*="custom-wide-item wide computer"].column, .ui.grid>.column.row>[class*="custom-wide-item wide computer"].column, .ui.grid>.row>[class*="custom-wide-item wide computer"].column, .ui.grid>[class*="custom-wide-item wide computer"].column {
+        width: 50%!important;
+        max-width: 50%!important;
+    }
+
+    .ui.grid>[class*="five-wide-item wide computer"].column, .ui.grid>.column.row>[class*="custom-wide-item wide computer"].column, .ui.grid>.row>[class*="custom-wide-item wide computer"].column, .ui.grid>[class*="custom-wide-item wide computer"].column {
+        width: 50%!important;
+        max-width: 50%!important;
+    }
+}
+
+@media only screen and (min-width: 1040px) {
+    .ui.grid>[class*="custom-wide-item wide computer"].column, .ui.grid>.column.row>[class*="custom-wide-item wide computer"].column, .ui.grid>.row>[class*="custom-wide-item wide computer"].column, .ui.grid>[class*="custom-wide-item wide computer"].column {
+        width: 33.33%!important;
+        max-width: 33.33%!important;
+    }
+    .ui.grid>[class*="five-wide-item wide computer"].column, .ui.grid>.column.row>[class*="custom-wide-item wide computer"].column, .ui.grid>.row>[class*="custom-wide-item wide computer"].column, .ui.grid>[class*="custom-wide-item wide computer"].column {
+        width: 20%!important;
+        max-width: 20%!important;
+    }
+}
+
+
+@media only screen and (max-width: 767.98px) {
+    #wrap .ui.form .fields .wide.field {
+        margin-bottom: 1em;
+    }
+
+    #wrap .ui[class*="custom column"].grid>.column:not(.row), #wrap .ui[class*="custom column"].grid>.row>.column {
+        width: 100%;
+    }
+    .ui.grid>[class*="five-wide-item wide computer"].column, .ui.grid>.column.row>[class*="custom-wide-item wide computer"].column, .ui.grid>.row>[class*="custom-wide-item wide computer"].column, .ui.grid>[class*="custom-wide-item wide computer"].column {
+        width: 50%!important;
+        max-width: 50%!important;
+    }
+}
+
+@media only screen and (max-width: 991.98px) and (min-width: 768px) {
+.ui.column.grid>[class*="three-item wide tablet"].column, .ui.grid>.column.row>[class*="three-item wide tablet"].column, .ui.grid>.row>[class*="three-item wide tablet"].column, .ui.grid>[class*="three-item wide tablet"].column {
+    width: 33.33%!important;
+}
+}
