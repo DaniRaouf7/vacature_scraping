@@ -1,6 +1,7 @@
 import pandas as pd
 from src.scraping import scrape_vacatures
 from src.get_vacature_description import get_vacature_description
+from src.integration_chatgpt import process_vacatures
 
 
 def main():
@@ -24,8 +25,15 @@ def main():
         df_vacatures_banken_nl = pd.DataFrame(scraped_data)
         df_vacatures_banken_nl = df_vacatures_banken_nl[df_vacatures_banken_nl['organization'].str.lower().isin([org.lower() for org in target_organizations])]
         df_vacatures_banken_nl = df_vacatures_banken_nl.fillna(value='Onbekend')
+
+        # Ophalen volledige functie omschrijving
         df_vacatures_banken_nl['Volledige Functie omschrijving'] = df_vacatures_banken_nl['link'].apply(get_vacature_description)
 
+        # Toepassen van openAI op volledige functie omschrijving
+        df_analyse_openai = process_vacatures(df_vacatures_banken_nl)
+
+        # Samenvoegen twee DF
+        df_vacatures_banken_nl = pd.concat([df_vacatures_banken_nl, df_analyse_openai], axis=1)
 
         # Wegschrijven naar een excel bestand
         df_vacatures_banken_nl.to_excel(file_path_excel, index=False)
